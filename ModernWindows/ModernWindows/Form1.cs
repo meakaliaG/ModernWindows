@@ -17,5 +17,11 @@ namespace ModernWindows
             if (!string.IsNullOrWhiteSpace(txtName.Text) && !lstNames.Items.Contains(txtName.Text))
                 lstNames.Items.Add(txtName.Text);
         }
+
+        private void txtName_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtName.Text) && !lstNames.Items.Contains(txtName.Text))
+                lstNames.Items.Add(txtName.Text);
+        }
     }
 }

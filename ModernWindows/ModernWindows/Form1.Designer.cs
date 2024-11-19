@@ -69,6 +69,7 @@
             txtName.Name = "txtName";
             txtName.Size = new Size(221, 31);
             txtName.TabIndex = 3;
+            txtName.Enter += txtName_Enter;
             // 
             // Names
             // 
